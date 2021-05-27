@@ -1,16 +1,21 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.bg-blue-light{
+  background: linear-gradient(180deg, #F1F8FF 0%, #FDFDFD 100%);
+
+}
+.blue-light{
+  color: #99B2CC;
+}
+.pink{
+  color: #D8315B;
+}
+.blue-dark{
+  color: #0A2463;
+  
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bg-blue{
+  background-color: #3E92CC !important; 
 }
-
-* {
-  box-sizing: border-box;
+input::placeholder{
+  color: #fff;
 }
