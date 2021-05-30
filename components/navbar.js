@@ -21,10 +21,17 @@ export default function (){
                         <img width="16" height="16" src="/user.png" class="ms-3"/>
                     </div>
                </div>
-
+              
                <div>
                    <input type="text" class="form-control text-center text-white bg-blue mt-3" value="Pesquise aqui"/>
                </div>
+
+               <div class="d-flex justify-content-between p-4">
+                    <a class="menu-link blue-dark">Notícias</a>
+                    <a class="menu-link blue-dark">Causas</a>
+                    <a class="menu-link blue-dark">Ranking</a>
+                    <a class="menu-link blue-dark">Sobre nós</a>
+                </div>
            </Container>
         </Navbar>
     )
