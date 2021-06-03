@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
+import Aside from '../components/aside'
 export default function Home() {
   return (
     <div>
         <Navbar></Navbar>
-
+        <Aside></Aside>
         <section class="p-5 bg-pink">
 
         </section>
