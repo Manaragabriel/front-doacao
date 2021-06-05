@@ -3,11 +3,18 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Aside from '../components/aside'
+import { useState } from 'react'
 export default function Home() {
+  const [showMenu, setShowMenu ]= useState(false);
+  
+  const openMenu = () =>{
+    console.log('here')
+    setShowMenu(showMenu ? false : true);
+  }
   return (
     <div>
-        <Navbar></Navbar>
-        <Aside></Aside>
+        <Navbar openMenu={openMenu}></Navbar>
+        <Aside showMenu={showMenu}></Aside>
         <section class="p-5 bg-pink">
 
         </section>
