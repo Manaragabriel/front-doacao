@@ -83,3 +83,34 @@ input::placeholder{
 .form-control{
   background-color: var(--light-blue) !important;
 }
+
+.img-list{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.progress{
+  background-color: #fff !important;
+  color: var(--pink);
+
+}
+
+.progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+.progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+.progress::-webkit-progress-value {
+  background: var(--pink);
+}
+
+.progress::-webkit-progress-bar {
+  background: #d1d1d1
+}
+#banner{
+  height: 30vh;
+  background: linear-gradient(88.23deg, #D8315B 0%, #151C24 31.77%, #0A2463 73.96%, #3E92CC 100%);
+}
