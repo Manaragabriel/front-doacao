@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Aside from '../components/aside'
+import Footer from '../components/footer'
 import { useState } from 'react'
 export default function Home() {
   const [showMenu, setShowMenu ]= useState(false);
@@ -150,6 +151,7 @@ export default function Home() {
                 </div>
             </div>
         </section>
+        <Footer />
     </div>
   )
 }
