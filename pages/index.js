@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Aside from '../components/aside'
 import Footer from '../components/footer'
+import Banner from '../components/banner'
 import { useState } from 'react'
 export default function Home() {
   const [showMenu, setShowMenu ]= useState(false);
@@ -15,10 +16,8 @@ export default function Home() {
   return (
     <div>
         <Navbar openMenu={openMenu}></Navbar>
-        <Aside showMenu={showMenu}></Aside>
-        <section class="p-5 bg-pink">
-
-        </section>
+        <Aside showMenu={showMenu} openMenu={openMenu}></Aside>
+        <Banner />
 
         <section class="p-5">
             <div class="container">
@@ -36,7 +35,7 @@ export default function Home() {
                                 Ajude familias e crianças a superarem a pobreza e fome para terem esperanças em um futuro melhor.  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>
@@ -57,7 +56,7 @@ export default function Home() {
                               Ajude hospitais a vencer a guerra do Covid, simples gestos grandes mudanças.  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>
@@ -78,7 +77,7 @@ export default function Home() {
                                 Contribua com projetos voltados a educação para melhorar cada vez mais a sociedade!  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>
@@ -99,7 +98,7 @@ export default function Home() {
                                 Ajude os animaizinhos de Mogi Mirim.  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>
@@ -120,7 +119,7 @@ export default function Home() {
                                 Ajude ambientes a serem revitalizados.  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>
@@ -141,7 +140,7 @@ export default function Home() {
                                 Conheça nossas causas, e ajude-nos a melhorar o planeta!  
                             </span>
                             <div class="text-center">
-                              <a class=" donation-button donation-button btn col-3 my-2">
+                              <a class=" donation-button donation-button btn col-3 my-2" href="/list">
                                   Doe
                               </a>
                             </div>

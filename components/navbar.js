@@ -14,7 +14,7 @@ export default function (props){
                         <span class="ms-2 blue-light">doacaomogimirim@email.com</span>
                     </div>
                     <div class="d-flex align-items-center">
-                        <h1 class="pink h4">Doe MM</h1>
+                        <h1 class="pink h4">Sou MM</h1>
                     </div>
                     <div  class="d-flex align-items-center">
                         <a class="blue-dark btn" onClick={props.openMenu}>Entre ou cadastre-se</a>

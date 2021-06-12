@@ -1,23 +1,45 @@
 import {Navbar, Form, FormControl, Button,NavDropdown, Nav, Container} from 'react-bootstrap'
 import Image from 'next/image'
+import LoginForm from './forms/login-form';
+import RegisterForm from './forms/register-form';
+import { useState } from 'react'
+
+
+function ShowLoginForm(props){
+    
+    if(props.showLogin){
+        return <LoginForm openMenu={props.openMenu} showMenu={props.showMenu}  changeForm={props.changeForm} />
+    }
+    return '';
+}
+
+function ShowRegisterForm(props){
+    if(props.showRegister){
+        return <RegisterForm openMenu={props.openMenu} showMenu={props.showMenu} changeForm={props.changeForm}/>
+    }
+    return '';
+}
 
 export default function  Aside(props){
- 
+    
+    const [showLogin, setShowLogin] = useState(true);
+    const [showRegister, setShowRegister] = useState(false);
+
+    const changeForm = (form)=> {
+        console.log('change form >>>>', form)
+        if(form == 'login'){
+            setShowLogin(true);
+            setShowRegister(false);
+        }
+        if(form == 'register'){
+            setShowLogin(false);
+            setShowRegister(true);
+        }
+    }
     return (
-        <aside  className={(props.showMenu) ? 'position-fixed top-0 end-0 sidebar' : 'd-none'}>
-           <div class="p-5">
-                <h4 class="text-center">Faça seu login!</h4>
-                <p class="text-center">Não possui uma conta ainda? <a class="pink">Cadastre-se aqui!</a></p>
-
-                <div class="form-group my-5">
-                    <label class="bold">Email / CNPJ</label>
-                    <input type="text" class="form-control" placeholder="Digite seu usuário aqui..."/>
-                </div>
-
-              
-                <button class="btn bg-blue text-white mt-3 w-100">Próximo</button>
-                
-           </div>
+        <aside  className={(props.showMenu) ? 'position-fixed top-0 end-0 sidebar ' : 'd-none'}>
+            <ShowLoginForm  showLogin={showLogin} openMenu={props.openMenu} showMenu={props.showMenu} changeForm={changeForm}/>
+            <ShowRegisterForm showRegister={showRegister} openMenu={props.openMenu} showMenu={props.showMenu} changeForm={changeForm} />
         </aside>
     )
 }
