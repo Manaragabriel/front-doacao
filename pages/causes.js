@@ -83,7 +83,7 @@ export default function Causes() {
                                                 <div>
                                                     <h4>Enchentes, Jardim das Flores</h4>
                                                     <p class="mt-2 fnt-14">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                                                    <a class="pink fw-bold text-decoration-none mt-4">Ver mais</a>
+                                                    <a class="pink fw-bold text-decoration-none mt-4" href="/cause">Ver mais</a>
                                                 </div>
                                             </div>
                                         

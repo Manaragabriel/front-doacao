@@ -12,11 +12,11 @@ export default function (props){
                <div class="d-flex justify-content-between ">
                     
                     <div class="d-flex align-items-center">
-                        <h1 class="pink h4">Sou MM</h1>
+                        <h1 class="pink h4 logo"><a href="/" class="text-decoration-none pink">Sou MM</a></h1>
                     </div>
                     <div class="d-flex justify-content-between ">
                         <a class="menu-link blue-dark px-5 d-flex align-items-center">Notícias</a>
-                        <a class="menu-link blue-dark px-5 d-flex align-items-center">Causas</a>
+                        <a class="menu-link blue-dark px-5 d-flex align-items-center" href="/causes">Causas</a>
                         <a class="menu-link blue-dark px-5 d-flex align-items-center">Parceiros</a>
                         <a class="menu-link blue-dark px-5 d-flex align-items-center">Sobre nós</a>
                     </div>

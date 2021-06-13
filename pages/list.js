@@ -39,8 +39,7 @@ export default function List() {
                                 </div>
 
                                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                                    
-                                     
+                                                                        
                                     <a class="btn mt-3 btn-primary col-6 p-3  bg-pink-dark">Doar</a>
                                    
                                 </div>
@@ -66,7 +65,7 @@ export default function List() {
                                                 <div>
                                                     <h4>Enchentes, Jardim das Flores</h4>
                                                     <p class="mt-2 fnt-14">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                                                    <a class="pink fw-bold text-decoration-none mt-4">Ver mais</a>
+                                                    <a class="pink fw-bold text-decoration-none mt-4"  href="/cause">Ver mais</a>
                                                 </div>
                                             </div>
                                         
@@ -101,7 +100,7 @@ export default function List() {
 
 
                     <div class="col-lg-4">
-                       <div class="bg-blue-light-2 px-2 h-100">
+                       <div class="bg-blue-light-2 px-3 h-100">
                             <h4 class="blue-dark  py-2">Doadores</h4>
                             <p class="pink  text-decoration-none">Leia abaixo alguns dos depoimentos e comentarios feitos pelos apoiadores.</p>
                             <div class="donators px-3">
