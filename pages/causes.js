@@ -6,7 +6,8 @@ import Aside from '../components/aside'
 import Footer from '../components/footer'
 import Alert from '../components/alert'
 import { useState } from 'react'
-export default function List() {
+
+export default function Causes() {
   const [showMenu, setShowMenu ]= useState(false);
   
   const openMenu = () =>{
@@ -21,7 +22,7 @@ export default function List() {
 
        <section class="p-3">
            <div class="container">
-               <p class="blue-light">Home > Causas > Famílias carentes</p>
+               <p class="blue-light">Home > Causas</p>
            </div>
        </section>
 
@@ -29,26 +30,42 @@ export default function List() {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card p-4">
+                        <div class="p-4">
                              <div class="row">
-                                <div class="col-lg-9">
-                                    <h4 class="blue-dark">Doe para todas as causas de: <b>Familias Carentes</b></h4>
-                                    <p class="blue-light">
-                                        Doação por segmento é um modelo para cooperar e ajudar todas as causas de uma só vez. O valor doado será distribuido igualmente entre todas as causas cadastradas com o segmento em destaque “Familias Carentes”, <br /><br />Contamos com você para salvar o mundo!
-                                    </p>
+                                <div class="col-lg-2 d-flex justify-content-start">  
+                                    <h4 class="blue-dark">Causas</h4>
                                 </div>
 
-                                <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                                    
-                                     
-                                    <a class="btn mt-3 btn-primary col-6 p-3  bg-pink-dark">Doar</a>
-                                   
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control bg-white border-none" id="search" placeholder="Pesquise aqui o que procura"/>
+
+                              
                                 </div>
+
+
                              </div>
                         </div>
                     </div>
 
                     
+                </div>
+                <div class="row p-4">
+                    <div class="col-lg-2">
+                        <a class="pink fw-bold mt-4 fnt-14">Cadastrar Causa</a>
+
+                    </div>
+
+                    <div class="col-lg-10">
+                         <ul class=" p-0 m-0">
+                            <li class="btn blue-dark">Todas</li>
+                            <li class="btn  blue-dark">Saúde</li>
+                            <li class="btn  blue-dark">Educação</li>
+                            <li class="btn  blue-dark">Familias Carentes</li>
+                            <li class="btn  blue-dark">Meio Ambiente</li>
+                            <li class="btn  blue-dark">Animais Carentes</li>
+                            <li class="btn  blue-dark">Minhas causas</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -57,7 +74,7 @@ export default function List() {
             <div class="container">
                 <div class="row">
                   
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <h4 class="blue-dark border-b py-2">Causas: Famílias Carentes</h4>
                         {[...Array(8)].map((x,i) => 
                                 <div class="card card-cause p-4 mt-3 border-b-1">
@@ -99,27 +116,6 @@ export default function List() {
                         
                     </div>
 
-
-                    <div class="col-lg-4">
-                       <div class="bg-blue-light-2 px-2 h-100">
-                            <h4 class="blue-dark  py-2">Doadores</h4>
-                            <p class="pink  text-decoration-none">Leia abaixo alguns dos depoimentos e comentarios feitos pelos apoiadores.</p>
-                            <div class="donators px-3">
-                                <h4 class="blue fnt-16">João da Silva Ribeiro</h4>
-                                <p class="fnt-14">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                                </p>
-                            </div>
-                            {[...Array(8)].map((val,index) =>
-                                <div class="donators px-3">
-                                    <h4 class="blue fnt-16">João da Silva Ribeiro</h4>
-                                    <p class="fnt-14">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                                    </p>
-                                </div>
-                            )}
-                       </div>
-                    </div>
                 </div>
             </div>
         </section>
