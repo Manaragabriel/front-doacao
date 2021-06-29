@@ -47,7 +47,7 @@ export default function Home() {
                                   {value.description}  
                               </span>
                               <div class="text-center">
-                                <a class=" donation-button donation-button btn col-3 my-2" href="/list">
+                                <a class=" donation-button donation-button btn col-3 my-2" href={`causas/${value.id}`}>
                                     Doe
                                 </a>
                               </div>
